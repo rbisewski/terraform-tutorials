@@ -60,6 +60,12 @@ Remove all resources and components associated with this configuration:
 terraform destroy
 ```
 
+Once you have infrastructure provisioned, you can query the outputs of those like so:
+
+```bash
+terraform output
+```
+
 ### Other useful tips
 
 Variables for your scripts can used, if needed.
@@ -79,3 +85,13 @@ Afterwards, the variable can be set at the commandline like so:
 ```bash
 terraform apply -var "instance_name=BrandNewInstance"
 ```
+
+### Terraform Cloud
+
+To login to Terraform Cloud, type the following:
+
+```bash
+terraform login
+```
+
+Terraform will then request an API token for app.terraform.io using your browser.
